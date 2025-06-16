@@ -20,8 +20,8 @@ function loginUser() {
   let storedPass = localStorage.getItem('zappyPass');
 
   if (username === storedUser && password === storedPass) {
-    alert('Login successful!');
-    // Redirect to dashboard or homepage here if needed
+    alert('Login successful! Redirecting...');
+    window.location.href = 'https://ahmadsmmpanel.com';  // <--- Redirect URL here
   } else {
     alert('Incorrect username or password. Please sign up first.');
   }
